@@ -1,5 +1,39 @@
 **MUSES Tutorial Notebook**
 
-This notebook was prepared for the CSQCD 2026 school. It provides a step-by-step guide to using the MUSES framework for computing the Equation of State and neutron star observables.
+This repository contains the hands-on notebook for the MUSES Calculation Engine session at CSQCD 2026.
 
-The notebook covers the basics of setting up the environment, running simulations, and analyzing results.   
+## Run in Google Colab
+
+Click below:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mrpelicer/muses-csqcd2026/blob/main/muses_tutorial.ipynb)
+
+Then run the first setup cell.
+
+## What this tutorial covers
+
+1. Running a CMF → Lepton → QLIMR workflow.
+2. Running a Crust-DFT → Lepton → QLIMR workflow.
+3. Combining Crust-DFT and CMF with Synthesis.
+4. Downloading and reading Calculation Engine output files.
+5. Plotting equations of state and neutron-star mass-radius curves.
+
+## Requirements
+
+No local installation is needed if using Google Colab.
+
+You will need:
+
+- A web browser.
+- A MUSES Calculation Engine account.
+- A MUSES CE API token.
+
+## Local usage
+
+```bash
+git clone https://github.com/mrpelicer/muses-csqcd2026.git
+cd muses-csqcd2026
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+jupyter lab muses_tutorial.ipynb
